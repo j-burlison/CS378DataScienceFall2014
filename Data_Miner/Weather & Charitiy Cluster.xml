@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<WorkflowProcess Version="12.1.0.1.4" DBVersion="12.1.0.1.0" xmlns="http://xmlns.oracle.com/odmr11">
+    <Nodes>
+        <DataSource Id="10003" Name="WEATHER" Status="Complete">
+            <Icon XCOORD="207" YCOORD="295"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <CacheSettings UseFullData="false" GenerateCache="false">
+                <NumberOfRows>2000</NumberOfRows>
+                <Method>
+                    <TopN/>
+                </Method>
+            </CacheSettings>
+            <SQLExpression>"N$10003" as (select /*+ inline */ "WEATHER"."END_AZIMUTH", 
+"WEATHER"."END_LOCATION", 
+"WEATHER"."TOR_LENGTH", 
+"WEATHER"."CZ_NAME_STR", 
+"WEATHER"."INJURIES_INDIRECT", 
+"WEATHER"."FLOOD_CAUSE", 
+"WEATHER"."TOR_F_SCALE", 
+"WEATHER"."SOURCE", 
+"WEATHER"."BEGIN_TIME", 
+"WEATHER"."CZ_TYPE", 
+"WEATHER"."INJURIES_DIRECT", 
+"WEATHER"."DAMAGE_CROPS_NUM", 
+"WEATHER"."BEGIN_LOCATION", 
+"WEATHER"."EPISODE_ID", 
+"WEATHER"."DEATHS_DIRECT", 
+"WEATHER"."END_LON", 
+"WEATHER"."WFO", 
+"WEATHER"."EVENT_TYPE", 
+"WEATHER"."MAGNITUDE", 
+"WEATHER"."ABSOLUTE_ROWNUMBER", 
+"WEATHER"."END_RANGE", 
+"WEATHER"."BEGIN_LON", 
+"WEATHER"."END_LAT", 
+"WEATHER"."BEGIN_DATE", 
+"WEATHER"."STATE_ABBR", 
+"WEATHER"."CZ_FIPS", 
+"WEATHER"."DEATHS_INDIRECT", 
+"WEATHER"."BEGIN_LAT", 
+"WEATHER"."BEGIN_AZIMUTH", 
+"WEATHER"."MAGNITUDE_TYPE", 
+"WEATHER"."EVENT_ID", 
+"WEATHER"."DAMAGE_PROPERTY_NUM", 
+"WEATHER"."TOR_WIDTH", 
+"WEATHER"."CZ_TIMEZONE", 
+"WEATHER"."BEGIN_RANGE" 
+from "CS378_TP8433"."WEATHER"  )</SQLExpression>
+            <Attributes>
+                <Attribute Name="END_AZIMUTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="TOR_LENGTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="CZ_NAME_STR" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="FLOOD_CAUSE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="TOR_F_SCALE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_TIME" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="CZ_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="END_LON" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="WFO" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ABSOLUTE_ROWNUMBER" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="END_RANGE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_LON" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="END_LAT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="STATE_ABBR" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="CZ_FIPS" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_LAT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_AZIMUTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="TOR_WIDTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="CZ_TIMEZONE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="BEGIN_RANGE" DataType="VARCHAR2" Status="Valid"/>
+            </Attributes>
+            <SourceTable Schema="" Name="WEATHER"/>
+        </DataSource>
+        <DataSource Id="10037" Name="FCHARITIES" Status="Complete">
+            <Icon XCOORD="204" YCOORD="166"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <CacheSettings UseFullData="false" GenerateCache="false">
+                <NumberOfRows>2000</NumberOfRows>
+                <Method>
+                    <TopN/>
+                </Method>
+            </CacheSettings>
+            <SQLExpression>"N$10037" as (select /*+ inline */ "FCHARITIES"."FOUNDATION", 
+"FCHARITIES"."STATE", 
+"FCHARITIES"."SORT_NAME", 
+"FCHARITIES"."AFFILIATION", 
+"FCHARITIES"."ACTIVITY", 
+"FCHARITIES"."STREET", 
+"FCHARITIES"."STATUS", 
+"FCHARITIES"."RULING", 
+"FCHARITIES"."PF_FILING_REQ_CD", 
+"FCHARITIES"."ZIP", 
+"FCHARITIES"."ORGANIZATION", 
+"FCHARITIES"."INCOME_AMT", 
+"FCHARITIES"."CLASSIFICATION", 
+"FCHARITIES"."SUBSECTION", 
+"FCHARITIES"."ASSET_AMT", 
+"FCHARITIES"."EIN", 
+"FCHARITIES"."FILING_REQ_CD", 
+"FCHARITIES"."NAME", 
+"FCHARITIES"."ACCT_PD", 
+"FCHARITIES"."NTEE_CD", 
+"FCHARITIES"."ASSET_CD", 
+"FCHARITIES"."INCOME_CD", 
+"FCHARITIES"."WEALTH", 
+"FCHARITIES"."REVENUE_AMT", 
+"FCHARITIES"."ASS", 
+"FCHARITIES"."ICO", 
+"FCHARITIES"."CITY", 
+"FCHARITIES"."DEDUCTIBILITY", 
+"FCHARITIES"."TAX_PERIOD" 
+from "CS378_TP8433"."FCHARITIES"  )</SQLExpression>
+            <Attributes>
+                <Attribute Name="FOUNDATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="SORT_NAME" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="AFFILIATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ACTIVITY" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="STREET" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="STATUS" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="RULING" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="PF_FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ZIP" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ORGANIZATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="CLASSIFICATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="SUBSECTION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ASSET_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="EIN" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="NAME" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ACCT_PD" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="NTEE_CD" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ASSET_CD" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="WEALTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="REVENUE_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ASS" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="ICO" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="CITY" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="DEDUCTIBILITY" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute Name="TAX_PERIOD" DataType="VARCHAR2" Status="Valid"/>
+            </Attributes>
+            <SourceTable Schema="" Name="FCHARITIES"/>
+        </DataSource>
+        <DataProfile Id="10021" Name="Explore Join" Status="Complete">
+            <Icon XCOORD="498" YCOORD="362"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <CacheSettings UseFullData="false" GenerateCache="false">
+                <NumberOfRows>2000</NumberOfRows>
+                <Method>
+                    <TopN/>
+                </Method>
+            </CacheSettings>
+            <SQLExpression>"N$10021" AS ( SELECT /*+ inline */  ATTR,
+  DATA_TYPE,
+  NULL_PERCENT,
+  DISTINCT_CNT,
+  DISTINCT_PERCENT,
+  MODE_VALUE,
+  AVG,
+  AVG_DATE,
+  AVG_TS_TZ,
+  MEDIAN_VAL,
+  MEDIAN_DATE,
+  MEDIAN_TS_TZ,
+  MIN,
+  MAX,
+  STD,
+  VAR,
+  SKEWNESS,
+  KURTOSIS,
+  HISTOGRAMS FROM OUTPUT_1_186)</SQLExpression>
+            <DataProfileInput>
+                <Attributes>
+                    <Attribute Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="FOUNDATION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="SORT_NAME" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="AFFILIATION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ACTIVITY" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="STREET" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="STATUS" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="RULING" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="PF_FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ZIP" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ORGANIZATION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="CLASSIFICATION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ASSET_AMT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="SUBSECTION" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="EIN" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="NAME" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ACCT_PD" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ASSET_CD" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="NTEE_CD" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="REVENUE_AMT" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="WEALTH" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ASS" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="ICO" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="DEDUCTIBILITY" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="CITY" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="TAX_PERIOD" DataType="VARCHAR2" Status="Valid"/>
+                </Attributes>
+            </DataProfileInput>
+            <DataProfileOutput>
+                <Attributes>
+                    <Attribute Name="ATTR" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="DATA_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                    <Attribute Name="NULL_PERCENT" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="DISTINCT_CNT" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="DISTINCT_PERCENT" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="MODE_VALUE" DataType="NVARCHAR2" Status="Valid"/>
+                    <Attribute Name="AVG" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="AVG_DATE" DataType="DATE" Status="Valid"/>
+                    <Attribute Name="AVG_TS_TZ" DataType="TIMESTAMP WITH TIME ZONE" Status="Valid"/>
+                    <Attribute Name="MEDIAN_VAL" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="MEDIAN_DATE" DataType="DATE" Status="Valid"/>
+                    <Attribute Name="MEDIAN_TS_TZ" DataType="TIMESTAMP WITH TIME ZONE" Status="Valid"/>
+                    <Attribute Name="MIN" DataType="NVARCHAR2" Status="Valid"/>
+                    <Attribute Name="MAX" DataType="NVARCHAR2" Status="Valid"/>
+                    <Attribute Name="STD" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="VAR" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="SKEWNESS" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="KURTOSIS" DataType="NUMBER" Status="Valid"/>
+                    <Attribute Name="HISTOGRAMS" DataType="ODMR_HISTOGRAMS" Status="Valid"/>
+                </Attributes>
+            </DataProfileOutput>
+            <DataProfileSettings>
+                <NumericalBins>10</NumericalBins>
+                <CategoricalBins>10</CategoricalBins>
+                <DateBins>10</DateBins>
+            </DataProfileSettings>
+            <StatisticTable Name="OUTPUT_1_186" CreationDate="2014-11-10T18:33:12"/>
+            <StatsSelection percentdistinct="true" percentnull="true" max="true" min="true" avg="true" std="true" var="true" kurtosis="false" median="true" skewness="false" mode="true" modesampled="true" modeall="false" histogram="true"/>
+            <SampleSettings UseFullData="false" GenerateCache="true">
+                <NumberOfRows>2000</NumberOfRows>
+                <Method>
+                    <Random Seed="12345"/>
+                </Method>
+            </SampleSettings>
+        </DataProfile>
+        <Join UseCartesian="false" Id="10025" Name="Join" Status="Complete">
+            <Icon XCOORD="410" YCOORD="61"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <CacheSettings UseFullData="false" GenerateCache="false">
+                <NumberOfRows>2000</NumberOfRows>
+                <Method>
+                    <TopN/>
+                </Method>
+            </CacheSettings>
+            <SQLExpression>"N$10025" as (SELECT /*+ inline */
+"Filter Columns"."BEGIN_DATE"
+, "Filter Columns"."BEGIN_LOCATION"
+, "Filter Columns"."DAMAGE_CROPS_NUM"
+, "Filter Columns"."DAMAGE_PROPERTY_NUM"
+, "Filter Columns"."DEATHS_DIRECT"
+, "Filter Columns"."DEATHS_INDIRECT"
+, "Filter Columns"."END_LOCATION"
+, "Filter Columns"."EPISODE_ID"
+, "Filter Columns"."EVENT_ID"
+, "Filter Columns"."EVENT_TYPE"
+, "Filter Columns"."INJURIES_DIRECT"
+, "Filter Columns"."INJURIES_INDIRECT"
+, "Filter Columns"."MAGNITUDE"
+, "Filter Columns"."MAGNITUDE_TYPE"
+, "Filter Columns"."SOURCE"
+, "FCHARITIES"."FOUNDATION"
+, "FCHARITIES"."STATE"
+, "FCHARITIES"."SORT_NAME"
+, "FCHARITIES"."AFFILIATION"
+, "FCHARITIES"."ACTIVITY"
+, "FCHARITIES"."STREET"
+, "FCHARITIES"."STATUS"
+, "FCHARITIES"."RULING"
+, "FCHARITIES"."PF_FILING_REQ_CD"
+, "FCHARITIES"."ZIP"
+, "FCHARITIES"."ORGANIZATION"
+, "FCHARITIES"."INCOME_AMT"
+, "FCHARITIES"."CLASSIFICATION"
+, "FCHARITIES"."SUBSECTION"
+, "FCHARITIES"."ASSET_AMT"
+, "FCHARITIES"."EIN"
+, "FCHARITIES"."FILING_REQ_CD"
+, "FCHARITIES"."NAME"
+, "FCHARITIES"."ACCT_PD"
+, "FCHARITIES"."NTEE_CD"
+, "FCHARITIES"."ASSET_CD"
+, "FCHARITIES"."INCOME_CD"
+, "FCHARITIES"."WEALTH"
+, "FCHARITIES"."REVENUE_AMT"
+, "FCHARITIES"."ASS"
+, "FCHARITIES"."ICO"
+, "FCHARITIES"."CITY"
+, "FCHARITIES"."DEDUCTIBILITY"
+, "FCHARITIES"."TAX_PERIOD"
+
+FROM
+{INPUT_SOURCE:10008} "Filter Columns"
+
+INNER JOIN {INPUT_SOURCE:10037} "FCHARITIES"
+ON "Filter Columns"."STATE_ABBR" = "FCHARITIES"."STATE"
+ )</SQLExpression>
+            <KeyColumns AutoSpec="No">
+                <JoinColumn Type="Inner">
+                    <LeftColumn NodeId="10008" NodeName="Filter Columns" Key="Yes" Name="STATE_ABBR" DataType="VARCHAR2" Status="Valid"/>
+                    <RightColumn NodeId="10037" NodeName="FCHARITIES" Key="Yes" Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                </JoinColumn>
+            </KeyColumns>
+            <OutputColumns AutoSpec="No">
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10008" NodeName="Filter Columns" Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="FOUNDATION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="SORT_NAME" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="AFFILIATION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ACTIVITY" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="STREET" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="STATUS" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="RULING" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="PF_FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ZIP" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ORGANIZATION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="CLASSIFICATION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="SUBSECTION" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ASSET_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="EIN" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="NAME" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ACCT_PD" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="NTEE_CD" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ASSET_CD" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="WEALTH" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="REVENUE_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ASS" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="ICO" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="CITY" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="DEDUCTIBILITY" DataType="VARCHAR2" Status="Valid"/>
+                <RefDBColumn NodeId="10037" NodeName="FCHARITIES" Name="TAX_PERIOD" DataType="VARCHAR2" Status="Valid"/>
+            </OutputColumns>
+        </Join>
+        <ColumnFilter Id="10008" Name="Filter Columns" Status="Complete">
+            <Icon XCOORD="374" YCOORD="357"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <CacheSettings UseFullData="false" GenerateCache="false">
+                <NumberOfRows>2000</NumberOfRows>
+                <Method>
+                    <TopN/>
+                </Method>
+            </CacheSettings>
+            <SQLExpression>"N$10008" as (SELECT /*+ inline */
+"BEGIN_DATE",
+"BEGIN_LOCATION",
+"DAMAGE_CROPS_NUM",
+"DAMAGE_PROPERTY_NUM",
+"DEATHS_DIRECT",
+"DEATHS_INDIRECT",
+"END_LOCATION",
+"EPISODE_ID",
+"EVENT_ID",
+"EVENT_TYPE",
+"INJURIES_DIRECT",
+"INJURIES_INDIRECT",
+"MAGNITUDE",
+"MAGNITUDE_TYPE",
+"SOURCE",
+"STATE_ABBR"
+FROM {INPUT_SOURCE}
+ )</SQLExpression>
+            <ColumnFilterSettings NumberOfRows="2000">
+                <DataQualitySettings NullsPercent="95.0" UniquePercent="95.0" ConstantPercent="95.0"/>
+                <AttrImportantSettings SamplingType="System" StratifiedCutoff="10"/>
+            </ColumnFilterSettings>
+            <ColumnFilterAttributes AutoSpec="No" AutomaticFilterEnable="No">
+                <Attribute AutomaticFiltering="false" Output="No" Name="ABSOLUTE_ROWNUMBER" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="BEGIN_AZIMUTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="BEGIN_LAT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="BEGIN_LON" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="BEGIN_RANGE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="BEGIN_TIME" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="CZ_FIPS" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="CZ_NAME_STR" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="CZ_TIMEZONE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="CZ_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="END_AZIMUTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="END_LAT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="END_LON" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="END_RANGE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="FLOOD_CAUSE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="Yes" Name="STATE_ABBR" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="TOR_F_SCALE" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="TOR_LENGTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="TOR_WIDTH" DataType="VARCHAR2" Status="Valid"/>
+                <Attribute AutomaticFiltering="false" Output="No" Name="WFO" DataType="VARCHAR2" Status="Valid"/>
+            </ColumnFilterAttributes>
+            <ColumnFilterResults DataQualityOutput="ODMR$15_22_39_273000SVBTJOF" GenerateImportanceOutput="false">
+                <Attribute Name="ABSOLUTE_ROWNUMBER">
+                    <Reason Type="UNIQUE_LIMIT"/>
+                </Attribute>
+                <Attribute Name="BEGIN_AZIMUTH"/>
+                <Attribute Name="BEGIN_DATE"/>
+                <Attribute Name="BEGIN_LAT"/>
+                <Attribute Name="BEGIN_LOCATION"/>
+                <Attribute Name="BEGIN_LON"/>
+                <Attribute Name="BEGIN_RANGE"/>
+                <Attribute Name="BEGIN_TIME"/>
+                <Attribute Name="CZ_FIPS"/>
+                <Attribute Name="CZ_NAME_STR"/>
+                <Attribute Name="CZ_TIMEZONE"/>
+                <Attribute Name="CZ_TYPE">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="DAMAGE_CROPS_NUM">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="DAMAGE_PROPERTY_NUM"/>
+                <Attribute Name="DEATHS_DIRECT">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="DEATHS_INDIRECT">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="END_AZIMUTH">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="END_LAT">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="END_LOCATION">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="END_LON">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="END_RANGE">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="EPISODE_ID"/>
+                <Attribute Name="EVENT_ID">
+                    <Reason Type="UNIQUE_LIMIT"/>
+                </Attribute>
+                <Attribute Name="EVENT_TYPE"/>
+                <Attribute Name="FLOOD_CAUSE">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="INJURIES_DIRECT">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="INJURIES_INDIRECT">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="MAGNITUDE">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="MAGNITUDE_TYPE">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="SOURCE"/>
+                <Attribute Name="STATE_ABBR"/>
+                <Attribute Name="TOR_F_SCALE">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="TOR_LENGTH">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="TOR_WIDTH">
+                    <Reason Type="CONSTANT_LIMIT"/>
+                </Attribute>
+                <Attribute Name="WFO"/>
+            </ColumnFilterResults>
+        </ColumnFilter>
+        <ClusteringBuild Id="10031" Name="Clust Build" Status="Complete">
+            <Icon XCOORD="636" YCOORD="60"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <BuildDataSource SourceId="10025"/>
+            <CaseAttributes/>
+            <MiningAttributes AutoSpec="Yes">
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ACCT_PD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ACTIVITY" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="AFFILIATION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ASS" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ASSET_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ASSET_CD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="CITY" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="CLASSIFICATION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DEDUCTIBILITY" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="EIN" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="FOUNDATION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ICO" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="NAME" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="NTEE_CD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ORGANIZATION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="PF_FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="REVENUE_AMT" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="RULING" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="SORT_NAME" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="STATUS" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="STREET" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="SUBSECTION" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="TAX_PERIOD" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="WEALTH" DataType="VARCHAR2" Status="Valid"/>
+                <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ZIP" DataType="VARCHAR2" Status="Valid"/>
+            </MiningAttributes>
+            <Stoplists>
+                <Stoplist Id="1" Name="Default" Type="Basic" Language="ENGLISH" DBName="">
+                    <StopTokens>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>Mr</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>Mrs</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>Ms</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>a</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>all</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>almost</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>also</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>although</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>an</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>and</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>any</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>are</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>as</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>at</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>be</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>because</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>been</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>both</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>but</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>by</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>can</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>could</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>d</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>did</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>do</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>does</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>either</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>for</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>from</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>had</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>has</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>have</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>having</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>he</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>her</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>here</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>hers</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>him</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>his</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>how</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>however</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>i</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>if</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>in</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>into</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>is</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>it</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>its</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>just</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>ll</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>me</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>might</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>my</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>no</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>non</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>nor</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>not</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>of</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>on</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>one</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>only</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>onto</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>or</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>our</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>ours</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>s</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>shall</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>she</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>should</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>since</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>so</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>some</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>still</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>such</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>t</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>than</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>that</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>the</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>their</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>them</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>then</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>there</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>therefore</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>these</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>they</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>this</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>those</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>though</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>through</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>thus</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>to</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>too</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>until</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>ve</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>very</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>was</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>we</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>were</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>what</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>when</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>where</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>whether</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>which</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>while</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>who</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>whose</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>why</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>will</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>with</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>would</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>yet</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>you</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>your</Item>
+                        </Token>
+                        <Token Type="Word" Language="ENGLISH">
+                            <Item>yours</Item>
+                        </Token>
+                    </StopTokens>
+                </Stoplist>
+            </Stoplists>
+            <TextSettings TransformType="Token" CategoricalCutOffValue="200">
+                <Token>
+                    <Token MaxNumberPerDoc="50" MaxNumberAllDocs="3000" Frequency="IDF" StoplistId="1" Policy="">
+                        <Lexer Name="" Type="Basic">
+                            <Settings/>
+                        </Lexer>
+                        <Languages>
+                            <Language Name="ENGLISH" Type="SingleByte"/>
+                        </Languages>
+                    </Token>
+                </Token>
+                <Theme Type="Single">
+                    <Token MaxNumberPerDoc="50" MaxNumberAllDocs="3000" Frequency="IDF" StoplistId="1" Policy="">
+                        <Lexer Type="Basic">
+                            <Settings>
+                                <Attribute Name="index_themes" ValueString="YES" Type="String"/>
+                                <Attribute Name="theme_language" ValueString="ENGLISH" Type="String"/>
+                            </Settings>
+                        </Lexer>
+                        <Languages>
+                            <Language Name="ENGLISH" Type="SingleByte"/>
+                        </Languages>
+                    </Token>
+                </Theme>
+            </TextSettings>
+            <TextAttributes/>
+            <HeuristicSummaryResult StatisticTable="ODMR$01_22_40_194000VEQHMBQ">
+                <Attribute Name="ACTIVITY">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="ASSET_AMT">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="CITY">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="DEATHS_DIRECT">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="EIN">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="EVENT_ID">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="ICO">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="INCOME_AMT">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="NAME">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="NTEE_CD">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="REVENUE_AMT">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="RULING">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="SORT_NAME">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="STREET">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="SUBSECTION">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="WEALTH">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+                <Attribute Name="ZIP">
+                    <Reason Type="INPUT_NONE"/>
+                </Attribute>
+            </HeuristicSummaryResult>
+            <Models>
+                <KMeansModel Id="10029" Name="CLUS_KM_1_186" Status="Complete" CreationDate="2014-11-17T01:19:32" Annotation="" UseForOutput="true">
+                    <InputMiningData DataUsage="AUTO" MiningUsage="AUTO">
+                        <MiningAttributes>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="FOUNDATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="SORT_NAME" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="AFFILIATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ACTIVITY" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="STREET" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="STATUS" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="RULING" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="PF_FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ZIP" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ORGANIZATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="CLASSIFICATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="SUBSECTION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ASSET_AMT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="EIN" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="NAME" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ACCT_PD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="NTEE_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ASSET_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="WEALTH" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="REVENUE_AMT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ASS" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ICO" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="CITY" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DEDUCTIBILITY" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="TAX_PERIOD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                        </MiningAttributes>
+                        <HeuristicResult StatisticTable="ODMR$00_17_39_584000NRMUKRO">
+                            <Attribute Name="ACTIVITY">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="ASSET_AMT">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="CITY">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="DEATHS_DIRECT">
+                                <Reason Type="CONSTANT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="EIN">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="EVENT_ID">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="ICO">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="INCOME_AMT">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="NAME">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="NTEE_CD">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="REVENUE_AMT">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="RULING">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="SORT_NAME">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="STREET">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="SUBSECTION">
+                                <Reason Type="CONSTANT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="WEALTH">
+                                <Reason Type="NULL_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="ZIP">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                        </HeuristicResult>
+                    </InputMiningData>
+                    <KMeansAlgo>
+                        <CLUS_NUM_CLUSTERS>10</CLUS_NUM_CLUSTERS>
+                        <KMNS_BLOCK_GROWTH>2</KMNS_BLOCK_GROWTH>
+                        <KMNS_CONV_TOLERANCE>0.01</KMNS_CONV_TOLERANCE>
+                        <KMNS_DISTANCE>KMNS_EUCLIDEAN</KMNS_DISTANCE>
+                        <KMNS_ITERATIONS>30</KMNS_ITERATIONS>
+                        <KMNS_MIN_PCT_ATTR_SUPPORT>0.1</KMNS_MIN_PCT_ATTR_SUPPORT>
+                        <KMNS_NUM_BINS>10</KMNS_NUM_BINS>
+                        <KMNS_SPLIT_CRITERION>KMNS_VARIANCE</KMNS_SPLIT_CRITERION>
+                    </KMeansAlgo>
+                </KMeansModel>
+                <ExpectationMaximizationModel Id="10030" Name="CLUS_EM_1_186" Status="Complete" CreationDate="2014-11-20T08:03:00" Annotation="" UseForOutput="true">
+                    <InputMiningData DataUsage="AUTO" MiningUsage="AUTO">
+                        <MiningAttributes>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="FOUNDATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="STATE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="SORT_NAME" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="AFFILIATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ACTIVITY" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="STREET" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="STATUS" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="RULING" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="PF_FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ZIP" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ORGANIZATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="CLASSIFICATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="SUBSECTION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ASSET_AMT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="EIN" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="FILING_REQ_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="NAME" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ACCT_PD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="NTEE_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ASSET_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="WEALTH" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="REVENUE_AMT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="ASS" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="ICO" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="CITY" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DEDUCTIBILITY" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="TAX_PERIOD" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="BEGIN_DATE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="BEGIN_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DAMAGE_CROPS_NUM" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DAMAGE_PROPERTY_NUM" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="DEATHS_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="DEATHS_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="END_LOCATION" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="EPISODE_ID" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="No" Name="EVENT_ID" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="EVENT_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INJURIES_DIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="INJURIES_INDIRECT" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="MAGNITUDE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="MAGNITUDE_TYPE" DataType="VARCHAR2" Status="Valid"/>
+                            <MiningAttribute AutoPrep="Yes" MiningType="Categorical" Input="Yes" Name="SOURCE" DataType="VARCHAR2" Status="Valid"/>
+                        </MiningAttributes>
+                        <HeuristicResult StatisticTable="ODMR$01_22_40_194000VEQHMBQ">
+                            <Attribute Name="ACTIVITY">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="ASSET_AMT">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="CITY">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="DEATHS_DIRECT">
+                                <Reason Type="CONSTANT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="EIN">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="EVENT_ID">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="ICO">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="INCOME_AMT">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="NAME">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="NTEE_CD">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="REVENUE_AMT">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="RULING">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="SORT_NAME">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="STREET">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="SUBSECTION">
+                                <Reason Type="CONSTANT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="WEALTH">
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                            <Attribute Name="ZIP">
+                                <Reason Type="CAT_UNIQUE_PERCENT_LIMIT"/>
+                                <Reason Type="CAT_UNIQUE_COUNT_LIMIT"/>
+                            </Attribute>
+                        </HeuristicResult>
+                    </InputMiningData>
+                    <ExpectationMaximizationAlgo>
+                        <EMCS_CLUSTER_COMPONENTS>EMCS_CLUSTER_COMP_ENABLE</EMCS_CLUSTER_COMPONENTS>
+                        <EMCS_CLUSTER_THRESH>2.0</EMCS_CLUSTER_THRESH>
+                        <EMCS_LINKAGE_FUNCTION>EMCS_LINKAGE_SINGLE</EMCS_LINKAGE_FUNCTION>
+                        <EMCS_NUM_ITERATIONS>100</EMCS_NUM_ITERATIONS>
+                        <EMCS_LOGLIKE_IMPROVEMENT>0.001</EMCS_LOGLIKE_IMPROVEMENT>
+                        <EMCS_NUM_DISTRIBUTION>EMCS_NUM_DISTR_SYSTEM</EMCS_NUM_DISTRIBUTION>
+                        <EMCS_CLUSTER_STATISTICS>EMCS_CLUS_STATS_ENABLE</EMCS_CLUSTER_STATISTICS>
+                        <EMCS_MIN_PCT_ATTR_SUPPORT>0.1</EMCS_MIN_PCT_ATTR_SUPPORT>
+                        <EMCS_MAX_NUM_ATTR_2D>50</EMCS_MAX_NUM_ATTR_2D>
+                        <EMCS_NUM_PROJECTIONS>50</EMCS_NUM_PROJECTIONS>
+                        <EMCS_NUM_EQUIWIDTH_BINS>11</EMCS_NUM_EQUIWIDTH_BINS>
+                    </ExpectationMaximizationAlgo>
+                </ExpectationMaximizationModel>
+            </Models>
+        </ClusteringBuild>
+        <AssociationBuild MaxDistinctItemValue="10" Id="10035" Name="Assoc Build" Status="Ready">
+            <Icon XCOORD="206" YCOORD="5"></Icon>
+            <Messages/>
+            <Parallelism Enable="false">
+                <SystemDetermined/>
+            </Parallelism>
+            <BuildDataSource SourceId="10037"/>
+            <CaseAttributes>
+                <Attribute Name="INCOME_CD" DataType="VARCHAR2" Status="Valid"/>
+            </CaseAttributes>
+            <MiningAttributes AutoSpec="Yes"/>
+            <ItemID Name="INCOME_AMT" DataType="VARCHAR2" Status="Valid"/>
+            <ItemValue Name="STATE" DataType="VARCHAR2" Status="Invalid"/>
+            <Models>
+                <AprioriModel Id="10040" Name="ASSOC_AP_3_186" Status="Ready" Annotation="" UseForOutput="true">
+                    <InputMiningData DataUsage="MANUAL" MiningUsage="MANUAL">
+                        <MiningAttributes/>
+                    </InputMiningData>
+                    <AprioriAlgo>
+                        <ASSO_MAX_RULE_LENGTH>4</ASSO_MAX_RULE_LENGTH>
+                        <ASSO_MIN_CONFIDENCE>0.1</ASSO_MIN_CONFIDENCE>
+                        <ASSO_MIN_SUPPORT>0.01</ASSO_MIN_SUPPORT>
+                    </AprioriAlgo>
+                </AprioriModel>
+            </Models>
+        </AssociationBuild>
+    </Nodes>
+    <Links>
+        <Link Id="10009" From="10003" To="10008" Name="Link" Label="From &quot;WEATHER&quot; to &quot;Filter Columns&quot;">
+            <ConnectorGraphicsInfo>
+                <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </ConnectorGraphicsInfo>
+        </Link>
+        <Link Id="10027" From="10008" To="10025" Name="Link" Label="From &quot;Filter Columns&quot; to &quot;Join&quot;">
+            <ConnectorGraphicsInfo>
+                <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </ConnectorGraphicsInfo>
+        </Link>
+        <Link Id="10032" From="10025" To="10031" Name="Link" Label="From &quot;Join&quot; to &quot;Clust Build&quot;">
+            <ConnectorGraphicsInfo>
+                <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </ConnectorGraphicsInfo>
+        </Link>
+        <Link Id="10033" From="10025" To="10021" Name="Link" Label="From &quot;Join&quot; to &quot;Explore Join&quot;">
+            <ConnectorGraphicsInfo>
+                <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </ConnectorGraphicsInfo>
+        </Link>
+        <Link Id="10038" From="10037" To="10035" Name="Link" Label="From &quot;FCHARITIES&quot; to &quot;Assoc Build&quot;">
+            <ConnectorGraphicsInfo>
+                <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </ConnectorGraphicsInfo>
+        </Link>
+        <Link Id="10039" From="10037" To="10025" Name="Link" Label="From &quot;FCHARITIES&quot; to &quot;Join&quot;">
+            <ConnectorGraphicsInfo>
+                <Coordinates XCoordinate="0.0" YCoordinate="0.0"/>
+            </ConnectorGraphicsInfo>
+        </Link>
+    </Links>
+</WorkflowProcess>
