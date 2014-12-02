@@ -7,8 +7,11 @@ output: html_document
  After quite a bit of searching and sifting through a large of amount big data sets, we found the correct data set which was about tax statistics on  Charities & Other Tax-Exempt Organizations. 
 The data set was found on the IRS page. We picked this dataset because it contained a large set of interesting information such the income, revenue, assets, categories, and classifications of the different type of non-profit organizations.
 
-######link:http://www.irs.gov/uac/SOI-Tax-Stats-Charities-and-Other-Tax-Exempt-Organizations-Statistics
+######Links:
 
+######Data: http://www.irs.gov/uac/SOI-Tax-Stats-Charities-and-Other-Tax-Exempt-Organizations-Statistics
+
+######Prezi: http://prezi.com/llek_r4piyg-/?utm_campaign=share&utm_medium=copy&rc=ex0share
 
 ##Findings
 After an exhaustive search, our group was actually able to discover one interesting pattern within our data. It appears that it is possible to somewhat accurately predict the financial brackett that a charity organization will fall under. To do this the charity organizations where grouped into distinct categories. It is therefore important to note that our predictions have the limitation that an organization must fall within one of these categories.
