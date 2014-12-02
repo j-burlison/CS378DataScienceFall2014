@@ -1,0 +1,96 @@
+---
+title: "US_Charity_Orgs"
+output: html_document
+---
+
+##Where did we get our data?
+
+link:
+
+
+##Findings
+
+
+
+##Analysis
+###Python string based clustering:
+
+
+###Tableau Analysis
+
+
+####Looking at wealth by state
+
+#####Children Charities 
+![](./images/Child_Avg_Income.png) 
+
+
+#####Church Charities 
+![](./images/Church_Avg_Wealth.png) 
+
+
+#####Christian Charities 
+![](./images/Christian_Avg_Income.png) 
+
+
+#####Health Charities 
+![](./images/Health_Total_Wealth.png) 
+
+
+
+#####Sports Charities 
+![](./images/Sports_Avg_Wealth.png)
+
+
+###Oracle Data Miner
+
+#####Children Charities 
+
+######Workflow
+![](./images/Children.png) 
+
+######Lifts
+![](./images/ChildrenAssetLift.png) 
+![](./images/ChildrenIncomeLift.png) 
+
+
+#####Church Charities 
+
+######Workflow
+![](./images/Church.png) 
+
+######Lifts
+![](./images/ChurchAssetLift.png) 
+![](./images/ChurchIncomeLift.png) 
+
+
+#####Christian Charities 
+
+######Workflow
+![](./images/Christian.png) 
+
+######Lifts
+![](./images/ChristianAssetLift.png) 
+![](./images/ChristianIncomeLift.png) 
+
+
+#####Health Charities 
+
+######Workflow
+![](./images/Health.png) 
+
+######Lifts
+![](./images/HealthAssetLift.png) 
+![](./images/HealthIncomeLift.png)  
+
+
+
+#####Sports Charities 
+
+######Workflow
+![](./images/Sports.png) 
+
+######Lifts
+![](./images/SportsAssetLift.png) 
+![](./images/SportsIncomeLift.png) 
+
