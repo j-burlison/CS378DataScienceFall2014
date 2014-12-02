@@ -1,0 +1,2859 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8200.14.0819.2015                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='SPORTS_CHARITIES (CS378_TP8433)' inline='true' name='oracle.41962.829799745370' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='CS378_TP8433' server='128.83.138.158' service='PDBORCL' username='CS378_tp8433'>
+        <relation name='SPORTS_CHARITIES' table='[CS378_TP8433].[SPORTS_CHARITIES]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>EIN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EIN]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>EIN</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ICO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ICO]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ICO</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STREET</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STREET]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>STREET</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIP]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ZIP</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ASS]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ASS</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUBSECTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUBSECTION]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>SUBSECTION</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AFFILIATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AFFILIATION]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>AFFILIATION</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLASSIFICATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLASSIFICATION]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>CLASSIFICATION</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RULING</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RULING]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>RULING</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>6</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEDUCTIBILITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DEDUCTIBILITY]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>DEDUCTIBILITY</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FOUNDATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FOUNDATION]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>FOUNDATION</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACTIVITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ACTIVITY]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ACTIVITY</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>9</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORGANIZATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORGANIZATION]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ORGANIZATION</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATUS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATUS]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>STATUS</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAX_PERIOD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TAX_PERIOD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>TAX_PERIOD</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>6</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASSET_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ASSET_CD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ASSET_CD</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INCOME_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INCOME_CD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>INCOME_CD</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FILING_REQ_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FILING_REQ_CD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>FILING_REQ_CD</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF_FILING_REQ_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PF_FILING_REQ_CD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>PF_FILING_REQ_CD</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACCT_PD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ACCT_PD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ACCT_PD</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASSET_AMT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ASSET_AMT]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>ASSET_AMT</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INCOME_AMT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[INCOME_AMT]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>INCOME_AMT</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REVENUE_AMT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REVENUE_AMT]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>REVENUE_AMT</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NTEE_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NTEE_CD]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>NTEE_CD</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>4</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SORT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SORT_NAME]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>SORT_NAME</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>35</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEALTH</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[WEALTH]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>WEALTH</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[B]</local-name>
+            <parent-name>[SPORTS_CHARITIES]</parent-name>
+            <remote-alias>B</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_NUM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Acct Pd' datatype='string' name='[ACCT_PD]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Activity' datatype='string' name='[ACTIVITY]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Affiliation' datatype='string' name='[AFFILIATION]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Asset Amt' datatype='string' name='[ASSET_AMT]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Asset Cd' datatype='string' name='[ASSET_CD]' role='dimension' type='nominal'>
+      </column>
+      <column caption='City' datatype='string' name='[CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal'>
+      </column>
+      <column caption='Classification' datatype='string' name='[CLASSIFICATION]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Deductibility' datatype='string' name='[DEDUCTIBILITY]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Filing Req Cd' datatype='string' name='[FILING_REQ_CD]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Foundation' datatype='string' name='[FOUNDATION]' role='dimension' type='nominal'>
+      </column>
+      <column aggregation='CountD' caption='Income Amt' datatype='real' datatype-customized='true' name='[INCOME_AMT]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Income Cd' datatype='string' name='[INCOME_CD]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Ntee Cd' datatype='string' name='[NTEE_CD]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Organization' datatype='string' name='[ORGANIZATION]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Pf Filing Req Cd' datatype='string' name='[PF_FILING_REQ_CD]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Revenue Amt' datatype='string' name='[REVENUE_AMT]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Ruling' datatype='string' name='[RULING]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Sort Name' datatype='string' name='[SORT_NAME]' role='dimension' type='nominal'>
+      </column>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Status' datatype='string' name='[STATUS]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Street' datatype='string' name='[STREET]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Subsection' datatype='string' name='[SUBSECTION]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Tax Period' datatype='string' name='[TAX_PERIOD]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Wealth' datatype='real' name='[WEALTH]' role='measure' type='quantitative'>
+      </column>
+      <column datatype='string' name='[ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SPORTS_CHARITIES (CS378_TP8433)' name='oracle.41962.829799745370' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='oracle.41962.829799745370'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column caption='Wealth' datatype='real' name='[WEALTH]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WEALTH]' derivation='Sum' name='[sum:WEALTH:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[oracle.41962.829799745370].[Longitude (generated)]' field-type='quantitative' max='-6985318.0482378723' min='-14153341.180732382' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[oracle.41962.829799745370].[Latitude (generated)]' field-type='quantitative' max='6388471.8023842042' min='2763264.7008927283' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.41962.829799745370].[sum:WEALTH:qk]' />
+              <size column='[oracle.41962.829799745370].[sum:Number of Records:qk]' />
+              <lod column='[oracle.41962.829799745370].[none:STATE:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[oracle.41962.829799745370].[Latitude (generated)]</rows>
+        <cols>[oracle.41962.829799745370].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SPORTS_CHARITIES (CS378_TP8433)' name='oracle.41962.829799745370' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.41962.829799745370'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column caption='Wealth' datatype='real' name='[WEALTH]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[WEALTH]' derivation='Sum' name='[sum:WEALTH:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[oracle.41962.829799745370].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[oracle.41962.829799745370].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.41962.829799745370].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[oracle.41962.829799745370].[sum:WEALTH:qk]</rows>
+        <cols>[oracle.41962.829799745370].[none:STATE:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SPORTS_CHARITIES (CS378_TP8433)' name='oracle.41962.829799745370' />
+          </datasources>
+          <datasource-dependencies datasource='oracle.41962.829799745370'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+            </column>
+            <column caption='Wealth' datatype='real' name='[WEALTH]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[WEALTH]' derivation='Avg' name='[avg:WEALTH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[oracle.41962.829799745370].[sum:Number of Records:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[oracle.41962.829799745370].[avg:WEALTH:qk]</rows>
+        <cols>[oracle.41962.829799745370].[none:STATE:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.41962.829799745370].[sum:WEALTH:qk]' type='color' />
+            <card pane-specification-id='0' param='[oracle.41962.829799745370].[sum:Number of Records:qk]' type='size' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <selection-collection>
+        <tuple-selection>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;WY&quot;</value>
+              <value>77</value>
+              <value>18226898.0</value>
+              <value>43.0</value>
+              <value>-107.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;TN&quot;</value>
+              <value>471</value>
+              <value>246491274.0</value>
+              <value>35.75</value>
+              <value>-86.25</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;WV&quot;</value>
+              <value>215</value>
+              <value>22420520.0</value>
+              <value>38.630000000000003</value>
+              <value>-80.72999999999999</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;WI&quot;</value>
+              <value>726</value>
+              <value>162415228.0</value>
+              <value>44.5</value>
+              <value>-90.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;WA&quot;</value>
+              <value>864</value>
+              <value>651929068.0</value>
+              <value>47.5</value>
+              <value>-120.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;VT&quot;</value>
+              <value>87</value>
+              <value>56659584.0</value>
+              <value>44.0</value>
+              <value>-72.739999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;VA&quot;</value>
+              <value>930</value>
+              <value>352592327.0</value>
+              <value>37.769999999999996</value>
+              <value>-78.239999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;UT&quot;</value>
+              <value>113</value>
+              <value>185694659.0</value>
+              <value>39.25</value>
+              <value>-111.75</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;TX&quot;</value>
+              <value>2031</value>
+              <value>982305111.0</value>
+              <value>31.25</value>
+              <value>-99.25</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;SD&quot;</value>
+              <value>101</value>
+              <value>36141730.0</value>
+              <value>44.5</value>
+              <value>-100.25</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;SC&quot;</value>
+              <value>238</value>
+              <value>61444106.0</value>
+              <value>34.0</value>
+              <value>-81.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;RI&quot;</value>
+              <value>122</value>
+              <value>117884274.0</value>
+              <value>41.75</value>
+              <value>-71.489999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;PA&quot;</value>
+              <value>1275</value>
+              <value>1837808012.0</value>
+              <value>40.859999999999999</value>
+              <value>-77.900000000000006</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;OR&quot;</value>
+              <value>509</value>
+              <value>133785495.0</value>
+              <value>44.0</value>
+              <value>-120.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;OK&quot;</value>
+              <value>191</value>
+              <value>54049055.0</value>
+              <value>35.5</value>
+              <value>-97.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;OH&quot;</value>
+              <value>1447</value>
+              <value>620354070.0</value>
+              <value>40.25</value>
+              <value>-83.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NY&quot;</value>
+              <value>1406</value>
+              <value>1024616918.0</value>
+              <value>43.0</value>
+              <value>-75.489999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NV&quot;</value>
+              <value>203</value>
+              <value>54765560.0</value>
+              <value>39.25</value>
+              <value>-116.75</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NM&quot;</value>
+              <value>145</value>
+              <value>26762299.0</value>
+              <value>34.5</value>
+              <value>-106.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NJ&quot;</value>
+              <value>887</value>
+              <value>985710289.0</value>
+              <value>40.160000000000004</value>
+              <value>-74.489999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NH&quot;</value>
+              <value>173</value>
+              <value>69996535.0</value>
+              <value>43.660000000000004</value>
+              <value>-71.489999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NE&quot;</value>
+              <value>170</value>
+              <value>77676021.0</value>
+              <value>41.5</value>
+              <value>-99.75</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;ND&quot;</value>
+              <value>85</value>
+              <value>101529047.0</value>
+              <value>47.5</value>
+              <value>-100.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;NC&quot;</value>
+              <value>662</value>
+              <value>212258272.0</value>
+              <value>35.5</value>
+              <value>-80.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MT&quot;</value>
+              <value>162</value>
+              <value>38687048.0</value>
+              <value>47.0</value>
+              <value>-109.75</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MS&quot;</value>
+              <value>109</value>
+              <value>184625238.0</value>
+              <value>32.75</value>
+              <value>-89.75</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MO&quot;</value>
+              <value>450</value>
+              <value>192793817.0</value>
+              <value>38.25</value>
+              <value>-92.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MN&quot;</value>
+              <value>668</value>
+              <value>302534579.0</value>
+              <value>46.25</value>
+              <value>-94.25</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MI&quot;</value>
+              <value>861</value>
+              <value>347929107.0</value>
+              <value>44.25</value>
+              <value>-85.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;ME&quot;</value>
+              <value>176</value>
+              <value>95742112.0</value>
+              <value>45.5</value>
+              <value>-69.239999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MD&quot;</value>
+              <value>530</value>
+              <value>301096266.0</value>
+              <value>39.019999999999996</value>
+              <value>-76.629999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;MA&quot;</value>
+              <value>792</value>
+              <value>386627044.0</value>
+              <value>42.329999999999998</value>
+              <value>-71.820000000000007</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;LA&quot;</value>
+              <value>260</value>
+              <value>575374793.0</value>
+              <value>31.0</value>
+              <value>-92.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;KY&quot;</value>
+              <value>379</value>
+              <value>159127400.0</value>
+              <value>37.789999999999999</value>
+              <value>-84.870000000000005</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;KS&quot;</value>
+              <value>158</value>
+              <value>696457450.0</value>
+              <value>38.5</value>
+              <value>-98.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;IN&quot;</value>
+              <value>596</value>
+              <value>446970264.0</value>
+              <value>40.0</value>
+              <value>-86.25</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;IL&quot;</value>
+              <value>925</value>
+              <value>427315310.0</value>
+              <value>40.0</value>
+              <value>-89.25</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;ID&quot;</value>
+              <value>126</value>
+              <value>26126865.0</value>
+              <value>44.073900000000002</value>
+              <value>-114.542</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;IA&quot;</value>
+              <value>328</value>
+              <value>147284138.0</value>
+              <value>42.0</value>
+              <value>-93.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;GA&quot;</value>
+              <value>619</value>
+              <value>859661102.0</value>
+              <value>32.75</value>
+              <value>-83.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;FL&quot;</value>
+              <value>1435</value>
+              <value>948407039.0</value>
+              <value>28.419999999999998</value>
+              <value>-81.549999999999997</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;DE&quot;</value>
+              <value>93</value>
+              <value>22230876.0</value>
+              <value>39.0</value>
+              <value>-75.489999999999995</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;DC&quot;</value>
+              <value>65</value>
+              <value>427905866.0</value>
+              <value>38.910000000000004</value>
+              <value>-77.0</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;CT&quot;</value>
+              <value>462</value>
+              <value>175646510.0</value>
+              <value>41.660000000000004</value>
+              <value>-72.659999999999997</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;CO&quot;</value>
+              <value>454</value>
+              <value>1277934150.0</value>
+              <value>39.0</value>
+              <value>-105.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;CA&quot;</value>
+              <value>3610</value>
+              <value>1058576091.0</value>
+              <value>37.25</value>
+              <value>-119.75</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;AZ&quot;</value>
+              <value>494</value>
+              <value>130036729.0</value>
+              <value>34.5</value>
+              <value>-111.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;AR&quot;</value>
+              <value>175</value>
+              <value>28327240.0</value>
+              <value>34.75</value>
+              <value>-92.5</value>
+            </tuple>
+          </tuple-reference>
+          <tuple-reference>
+            <tuple-descriptor>
+              <pane-descriptor>
+                <x-fields>
+                  <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+                </x-fields>
+                <y-fields>
+                  <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                </y-fields>
+              </pane-descriptor>
+              <columns>
+                <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+                <field>[oracle.41962.829799745370].[sum:Number of Records:qk]</field>
+                <field>[oracle.41962.829799745370].[sum:WEALTH:qk]</field>
+                <field>[oracle.41962.829799745370].[Latitude (generated)]</field>
+                <field>[oracle.41962.829799745370].[Longitude (generated)]</field>
+              </columns>
+            </tuple-descriptor>
+            <tuple>
+              <value>&quot;AL&quot;</value>
+              <value>241</value>
+              <value>94428431.0</value>
+              <value>32.75</value>
+              <value>-86.75</value>
+            </tuple>
+          </tuple-reference>
+        </tuple-selection>
+      </selection-collection>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='0' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.41962.829799745370].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.41962.829799745370].[Multiple Values]</field>
+          <field>[oracle.41962.829799745370].[none:STATE:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='1' param='[oracle.41962.829799745370].[sum:Number of Records:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      kxeZTR1ZbP//8ty/xY5ybz0AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
