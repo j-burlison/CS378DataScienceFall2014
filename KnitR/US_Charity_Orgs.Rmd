@@ -11,12 +11,14 @@ The data set was found on the IRS page. We picked this dataset because it contai
 
 
 ##Findings
-
+After an exhaustive search, our group was actually able to discover one interesting pattern within our data. It appears that it is possible to somewhat accurately predict the financial brackett that a charity organization will fall under. To do this the charity organizations where grouped into distinct categories. It is therefore important to note that our predictions have the limitation that an organization must fall within one of these categories.
 
 
 ##Analysis
 ###Python string based clustering:
 We first pulled the data from oracle database and the loaded that in a CSV. Using a topic modelers which is an advanced, layered naive bayes, we found the interesting topics (Keywords) in the document. We have outlined the packages used and as well as a simple guide of using the topic modeler. We have also attached the paper on Latent Dirichlet analysis, the topic modeler that was used. 
+
+Using some of the keyword clusters rendered from the topic modeler, we created and analysed five subtables (seen below). The entries of each subtable define a more finite clustering of our data, based upon similarities within each cluster, that allowed us to run more accurate predictions. 
 
 
 
@@ -180,5 +182,6 @@ Sum of Number of Records ranges from 65 to 3,610 on this sheet.
 
 ######Income Code Prediction
 ![](./images/SportsIncomeLift.png) 
+
 
 

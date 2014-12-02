@@ -57,16 +57,21 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 <div id="where-did-we-get-our-data" class="section level2">
 <h2>Where did we get our data?</h2>
-<p>After quite a bit of searching and sifting through a large of amount big data sets, we found the correct data set which was about tax statistics on Charities &amp; Other Tax-Exempt Organizations. The data set was found on the IRS page. We picked this dataset because it contained a large set of interesting information such the income, revenue, assets, categories, and classifications of the different type of non-profit organizations . link:<a href="http://www.irs.gov/uac/SOI-Tax-Stats-Charities-and-Other-Tax-Exempt-Organizations-Statistics">http://www.irs.gov/uac/SOI-Tax-Stats-Charities-and-Other-Tax-Exempt-Organizations-Statistics</a></p>
+<p>After quite a bit of searching and sifting through a large of amount big data sets, we found the correct data set which was about tax statistics on Charities &amp; Other Tax-Exempt Organizations. The data set was found on the IRS page. We picked this dataset because it contained a large set of interesting information such the income, revenue, assets, categories, and classifications of the different type of non-profit organizations.</p>
+<div id="linkhttpwww.irs.govuacsoi-tax-stats-charities-and-other-tax-exempt-organizations-statistics" class="section level6">
+<h6>link:<a href="http://www.irs.gov/uac/SOI-Tax-Stats-Charities-and-Other-Tax-Exempt-Organizations-Statistics">http://www.irs.gov/uac/SOI-Tax-Stats-Charities-and-Other-Tax-Exempt-Organizations-Statistics</a></h6>
+</div>
 </div>
 <div id="findings" class="section level2">
 <h2>Findings</h2>
+<p>After an exhaustive search, our group was actually able to discover one interesting pattern within our data. It appears that it is possible to somewhat accurately predict the financial brackett that a charity organization will fall under. To do this the charity organizations where grouped into distinct categories. It is therefore important to note that our predictions have the limitation that an organization must fall within one of these categories.</p>
 </div>
 <div id="analysis" class="section level2">
 <h2>Analysis</h2>
 <div id="python-string-based-clustering" class="section level3">
 <h3>Python string based clustering:</h3>
 <p>We first pulled the data from oracle database and the loaded that in a CSV. Using a topic modelers which is an advanced, layered naive bayes, we found the interesting topics (Keywords) in the document. We have outlined the packages used and as well as a simple guide of using the topic modeler. We have also attached the paper on Latent Dirichlet analysis, the topic modeler that was used.</p>
+<p>Using some of the keyword clusters rendered from the topic modeler, we created and analysed five subtables (seen below). The entries of each subtable define a more finite clustering of our data, based upon similarities within each cluster, that allowed us to run more accurate predictions.</p>
 </div>
 <div id="tableau-analysis" class="section level3">
 <h3>Tableau Analysis</h3>
