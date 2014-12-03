@@ -23,6 +23,12 @@ We first pulled the data from oracle database and the loaded that in a CSV. Usin
 
 Using some of the keyword clusters rendered from the topic modeler, we created and analysed five subtables (seen below). The entries of each subtable define a more finite clustering of our data, based upon similarities within each cluster, that allowed us to run more accurate predictions. 
 
+####Code:
+#######To run this script, the Gemsim library is required. So firsrt, Run "pip install Gemsim".
+#######Then, to execute the python script, run python test.py.
+######The text version of the the script can be found at CS378DataScienceFall2014/Data_Miner/test.py on the github repository.
+![](./images/Python1.png)
+![](./images/Python2.png)
 
 
 ###Tableau Analysis
